@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
+
+project(Algorithms_Galochkin)
+
+set(Algorithms_Galochkin_STATIC_LIBRARIES TRUE)
+
+find_package(Freetype REQUIRED)
+find_package(JPEG REQUIRED)
+find_package(Algorithms_Galochkin COMPONENTS window graphics system REQUIRED)
+
+add_subdirectory(Game)
+add_subdirectory(lw1_Stek)
+add_subdirectory(lw2_Tree)
+add_subdirectory(lw3_Graph)
+add_subdirectory(lw4_Binar)
